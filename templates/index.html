@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Students_Marks</title>
+</head>
+<body>
+<div class="login">
+  <center>
+    <form action="/predict" method="POST">
+      <h1>Enter your study hours to predict marks</h1>
+      <input align="center" type="number" name="study_hours" placeholder="study_hours">
+      <br>
+      <div class="button cont">
+        <br>
+        <button type="submit ">predict</button>
+
+      </div>
+
+    </form>
+  </center>
+  <div>
+    <center>
+    <h2>{{ prediction_text }}</h2>
+    </center>
+  </div>
+
+</div>
+</body>
+</html>
